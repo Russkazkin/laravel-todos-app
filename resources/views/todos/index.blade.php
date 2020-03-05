@@ -1,3 +1,9 @@
+<?php
+/**
+ * @var $todos \App\Todo[]
+ */
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,5 +15,10 @@
 </head>
 <body>
     <h1>TODOS PAGE</h1>
+    <ul>
+    @foreach($todos as $todo)
+        <li>{{ $todo->name }}</li>
+    @endforeach
+    </ul>
 </body>
 </html>
