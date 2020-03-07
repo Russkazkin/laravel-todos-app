@@ -9,7 +9,8 @@
                 Create new todo
             </div>
             <div class="card-body">
-                <form action="">
+                <form action="/store-todos" method="POST">
+                    @csrf
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Name">
                     </div>
@@ -18,7 +19,7 @@
                                   class="form-control"></textarea>
                     </div>
                     <div class="form-group text-center">
-                        <button class="btn btn-success">Create todo</button>
+                        <button type="submit" class="btn btn-success">Create todo</button>
                     </div>
                 </form>
             </div>
