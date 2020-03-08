@@ -10,7 +10,7 @@
  </h1>
 <div class="row justify-content-center">
     <div class="col-md-6">
-        <div class="card">
+        <div class="card mb-2">
             <div class="card-header">
                 Details
             </div>
@@ -18,6 +18,7 @@
                 {{ $todo->description }}
             </div>
         </div>
+        <a href="/todos/{{ $todo->id }}/edit" class="btn btn-info btn-sm">Edit</a>
     </div>
 </div>
 @endsection
