@@ -38,4 +38,9 @@ class TodosController extends Controller
 
         return redirect('/todos');
     }
+
+    public function edit($todoId)
+    {
+        return view('todos.edit')->with('todo', Todo::find($todoId));
+    }
 }
