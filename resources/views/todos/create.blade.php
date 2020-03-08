@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Create new todo
+@endsection
+
 @section('content')
 <h1 class="text-center my-5">Create todo</h1>
 <div class="row justify-content-center">
