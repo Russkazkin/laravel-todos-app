@@ -19,7 +19,7 @@
             </div>
         </div>
         <a href="/todos/{{ $todo->id }}/edit" class="btn btn-info">Edit</a>
-        <form action="/todos/{{ $todo->id }}/delete" method="POST">
+        <form style="display: inline-block" action="/todos/{{ $todo->id }}/delete" method="POST">
             @csrf
             @method('DELETE')
             <button type="submit" class="btn btn-danger">
