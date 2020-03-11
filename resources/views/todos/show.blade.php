@@ -19,7 +19,13 @@
             </div>
         </div>
         <a href="/todos/{{ $todo->id }}/edit" class="btn btn-info">Edit</a>
-        <a href="/todos/{{ $todo->id }}/delete" class="btn btn-danger">Delete</a>
+        <form action="/todos/{{ $todo->id }}/delete" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">
+                Delete
+            </button>
+        </form>
     </div>
 </div>
 @endsection

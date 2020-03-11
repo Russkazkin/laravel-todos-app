@@ -26,6 +26,7 @@
                     @endif
                     <form action="/todos/{{ $todo->id }}/update-todos" method="POST">
                         @csrf
+                        @method('PATCH')
                         <div class="form-group">
                             <input type="text"
                                    class="form-control"
